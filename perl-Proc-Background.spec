@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Proc
 %define	pnam	Background
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ Perla Proc::Background - ogólny interfejs do zarz±dzania proc
 Name:		perl-Proc-Background
 Version:	1.08
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e02f11b627332169c37cab39cccf6451
@@ -36,6 +41,8 @@ te¿ zobaczyæ, jakie procesy nadal dzia³aj± w tle.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
