@@ -2,7 +2,7 @@
 Summary:	Proc-Background perl module
 Summary(pl):	Modu³ perla Proc-Background
 Name:		perl-Proc-Background
-Version:	1.04
+Version:	1.06
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
