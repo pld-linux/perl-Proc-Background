@@ -34,7 +34,7 @@ te¿ zobaczyæ, jakie procesy nadal dzia³aj± w tle.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
