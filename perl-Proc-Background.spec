@@ -4,8 +4,8 @@
 Summary:	Proc::Background perl module
 Summary(pl):	Modu³ perla Proc::Background
 Name:		perl-Proc-Background
-Version:	1.06
-Release:	4
+Version:	1.07
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
