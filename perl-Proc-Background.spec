@@ -3,7 +3,7 @@ Summary:	Proc-Background perl module
 Summary(pl):	Modu³ perla Proc-Background
 Name:		perl-Proc-Background
 Version:	1.06
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Proc/Proc-Background-%{ve
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 Provides:	perl(Proc::Generic)
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
