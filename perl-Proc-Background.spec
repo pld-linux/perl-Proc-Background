@@ -2,8 +2,8 @@
 Summary:	Proc-Background perl module
 Summary(pl):	Modu³ perla Proc-Background
 Name:		perl-Proc-Background
-Version:	0.02
-Release:	3
+Version:	1.01
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Proc/Background
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[13]/* \
