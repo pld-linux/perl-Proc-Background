@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Proc
-%define	pnam	Background
+%define		pdir	Proc
+%define		pnam	Background
 Summary:	Proc::Background Perl module - generic interface to background process management
 Summary(pl):	Modu³ Perla Proc::Background - ogólny interfejs do zarz±dzania procesami w tle
 Name:		perl-Proc-Background
