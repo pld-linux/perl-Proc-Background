@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Proc
 %define	pnam	Background
-%include	/usr/lib/rpm/macros.perl
 Summary:	Proc-Background perl module
 Summary(pl):	Modu³ perla Proc-Background
 Name:		perl-Proc-Background
 Version:	1.06
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ processing.
 Proc-Background - umo¿liwia uruchamianie pogramów w tle.
 
 %prep
-%setup -q -n Proc-Background-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
