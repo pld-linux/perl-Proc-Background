@@ -5,12 +5,12 @@ Summary:	Proc::Background - generic interface to background process management
 Summary(pl):	Modu³ Perla Proc::Background - ogólny interfejs do zarz±dzania procesami w tle
 Name:		perl-Proc-Background
 Version:	1.08
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Provides:	perl(Proc::Generic)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,7 +32,8 @@ te¿ zobaczyæ, jakie procesy nadal dzia³aj± w tle.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -47,10 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %attr(755,root,root) %{_bindir}/timed-process
-%{perl_sitelib}/Proc/Background.pm
-%dir %{perl_sitelib}/Proc/Background
-%{perl_sitelib}/Proc/Background/Unix.pm
-#%%{perl_sitelib}/Proc/Background/Win32.pm
+%{perl_vendorlib}/Proc/Background.pm
+%dir %{perl_vendorlib}/Proc/Background
+%{perl_vendorlib}/Proc/Background/Unix.pm
+#%%{perl_vendorlib}/Proc/Background/Win32.pm
 %{_mandir}/man1/*
 %{_mandir}/man3/Proc::Background.*
 %{_mandir}/man3/Proc::Background::Unix*
