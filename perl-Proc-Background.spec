@@ -50,8 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/Proc/Background.pm
 %dir %{perl_sitelib}/Proc/Background
 %{perl_sitelib}/Proc/Background/Unix.pm
-#%{perl_sitelib}/Proc/Background/Win32.pm
+#%%{perl_sitelib}/Proc/Background/Win32.pm
 %{_mandir}/man1/*
 %{_mandir}/man3/Proc::Background.*
 %{_mandir}/man3/Proc::Background::Unix*
-#%{_mandir}/man3/Proc::Background::Win32*
+#%%{_mandir}/man3/Proc::Background::Win32*
