@@ -32,7 +32,7 @@ te¿ zobaczyæ, jakie procesy nadal dzia³aj± w tle.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
