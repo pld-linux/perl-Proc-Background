@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Proc
 %define	pnam	Background
-Summary:	Proc-Background perl module
-Summary(pl):	Modu³ perla Proc-Background
+Summary:	Proc::Background perl module
+Summary(pl):	Modu³ perla Proc::Background
 Name:		perl-Proc-Background
 Version:	1.06
 Release:	4
@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Proc-Background - generic interface to place programs in background
+Proc::Background - generic interface to place programs in background
 processing.
 
 %description -l pl
-Proc-Background - umo¿liwia uruchamianie pogramów w tle.
+Proc::Background - umo¿liwia uruchamianie pogramów w tle.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
