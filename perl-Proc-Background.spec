@@ -6,7 +6,7 @@
 %define		pdir	Proc
 %define		pnam	Background
 Summary:	Proc::Background Perl module - generic interface to background process management
-Summary(pl):	Modu≥ Perla Proc::Background - ogÛlny interfejs do zarz±dzania procesami w tle
+Summary(pl.UTF-8):   Modu≈Ç Perla Proc::Background - og√≥lny interfejs do zarzƒÖdzania procesami w tle
 Name:		perl-Proc-Background
 Version:	1.08
 Release:	2
@@ -27,12 +27,12 @@ processes in the background on Unix platforms. This module lets you
 start, kill, wait on, retrieve exit values, and see if background
 processes still exist.
 
-%description -l pl
-Modu≥ Perla Proc::Background stanowi podstawowy interfejs dla
-umieszczania procesÛw w tle na platformach uniksowych. Modu≥ ten
-umoøliwia uruchamianie, zabijanie procesÛw, oczekiwanie na ich
-zakoÒczenie i odbieranie kodu powrotu procesu. Za jego pomoc± moøna
-teø zobaczyÊ, jakie procesy nadal dzia≥aj± w tle.
+%description -l pl.UTF-8
+Modu≈Ç Perla Proc::Background stanowi podstawowy interfejs dla
+umieszczania proces√≥w w tle na platformach uniksowych. Modu≈Ç ten
+umo≈ºliwia uruchamianie, zabijanie proces√≥w, oczekiwanie na ich
+zako≈Ñczenie i odbieranie kodu powrotu procesu. Za jego pomocƒÖ mo≈ºna
+te≈º zobaczyƒá, jakie procesy nadal dzia≈ÇajƒÖ w tle.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
