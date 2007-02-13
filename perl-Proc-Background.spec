@@ -6,7 +6,7 @@
 %define		pdir	Proc
 %define		pnam	Background
 Summary:	Proc::Background Perl module - generic interface to background process management
-Summary(pl.UTF-8):   Moduł Perla Proc::Background - ogólny interfejs do zarządzania procesami w tle
+Summary(pl.UTF-8):	Moduł Perla Proc::Background - ogólny interfejs do zarządzania procesami w tle
 Name:		perl-Proc-Background
 Version:	1.08
 Release:	2
