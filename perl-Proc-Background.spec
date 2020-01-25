@@ -4,7 +4,6 @@
 
 %define		pdir	Proc
 %define		pnam	Background
-%include	/usr/lib/rpm/macros.perl
 Summary:	Proc::Background Perl module - generic interface to background process management
 Summary(pl.UTF-8):	Moduł Perla Proc::Background - ogólny interfejs do zarządzania procesami w tle
 Name:		perl-Proc-Background
