@@ -8,7 +8,7 @@ Summary:	Proc::Background Perl module - generic interface to background process 
 Summary(pl.UTF-8):	Moduł Perla Proc::Background - ogólny interfejs do zarządzania procesami w tle
 Name:		perl-Proc-Background
 Version:	1.10
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
